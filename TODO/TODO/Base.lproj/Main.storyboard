@@ -28,6 +28,27 @@
                                     <segue destination="seA-YR-3K3" kind="modal" identifier="Write" modalTransitionStyle="flipHorizontal" id="UBs-Bc-PkX"/>
                                 </connections>
                             </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="setting" rowHeight="40" id="Gvd-oP-d80">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Gvd-oP-d80" id="gsL-Qa-sfR">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconfont-setting.png" translatesAutoresizingMaskIntoConstraints="NO" id="zFk-h9-7Ah">
+                                            <rect key="frame" x="280" y="0.0" width="40" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="9jZ-T2-jIq"/>
+                                                <constraint firstAttribute="width" constant="40" id="aSi-4J-KcC"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="centerY" secondItem="zFk-h9-7Ah" secondAttribute="centerY" id="X56-YE-4c4"/>
+                                        <constraint firstAttribute="centerX" secondItem="zFk-h9-7Ah" secondAttribute="centerX" id="jhm-XB-iP0"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="5gY-PQ-J8i" id="opy-xS-BWo"/>
@@ -79,4 +100,7 @@
             <point key="canvasLocation" x="1800" y="407"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="iconfont-setting.png" width="40" height="40"/>
+    </resources>
 </document>

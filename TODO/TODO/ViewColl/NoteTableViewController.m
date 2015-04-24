@@ -14,7 +14,7 @@
 @property(strong,nonatomic)UILabel *headerLable;
 
 @property(nonatomic,strong)NoteTableViewControllerViewModel *viewModel;
-
+@property(nonatomic,strong)UITableViewCell* footCell;
 @end
 
 @implementation NoteTableViewController
@@ -32,11 +32,13 @@
     _viewModel = [[NoteTableViewControllerViewModel alloc]init];
     [self setRefreshView];
 
-    //[self setRefreshFootView];
+    [self setRefreshFootView];
     
     [self.tableView registerNib:[UINib nibWithNibName:@"NoteTableViewCell" bundle:nil] forCellReuseIdentifier:@"Cell"];
     
     self.tableView.tableFooterView = [UIView new];
+    
+
     [self.tableView setBackgroundColor:[UIColor redColor]];
 }
 
@@ -82,6 +84,7 @@
 
 -(void)setRefreshFootView{
     
+    /*
     NSArray *images = @[[UIImage imageNamed:@"iconfont-setting"]];
     
     
@@ -94,6 +97,9 @@
 
     // 隐藏状态
     self.tableView.footer.stateHidden = YES;
+    */
+    
+  
 }
 
 -(void)goSetting{
@@ -182,7 +188,40 @@
 }
 */
 
+/*  酱紫就可以上啦刷新了 感觉自己萌萌哒
+#pragma mark - UITableView Delegate
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    float offset = self.tableView.contentOffset.y;
+    if (offset > 100) {
+        //headerLabel.text = @"可以松手了";
+        NSLog(@"可以松手了");
+        _footCell.hidden = NO;
+    }else{
+        NSLog(@"111=%f",offset);
+        _footCell.hidden = YES;
+    }
+   
+}
 
 
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate{
+    float offset = self.tableView.contentOffset.y;
+    if (offset > 100) {
+       // [self dismissViewControllerAnimated:YES completion:nil];
+        
+        NSLog(@"_______你做到了 亲");
+    }else{
+        //headerLabel.text = @"继续下拉关闭";
+        NSLog(@"继续下拉关闭");
+        _footCell.hidden = YES;
+    }
+    NSLog(@"222=%f",offset);
+}
+*/
+-(UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
+    _footCell = [tableView dequeueReusableCellWithIdentifier:@"setting"];
+    _footCell.hidden = YES;
+    return _footCell;
+}
 
 @end
