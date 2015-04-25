@@ -9,6 +9,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-NSDate+TimeAgo.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-RESideMenu.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-SVProgressHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,27 +42,37 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>117158D8BA448E79D848DA76</key>
+		<key>044184E56DF12EF941324458</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4606AE8C9BB53FDFE91FE10C</key>
+		<key>B9E7599153F69DFCBB4A0ABF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4D6DCAF786D3F1782A31B8B9</key>
+		<key>CC3669825ABEE9F16BE8B2E8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>512EC16731D19543DDDE914E</key>
+		<key>D0AC7857FE1E65C65352C7F7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>63829C9F5654F2F679AC47D2</key>
+		<key>D8690E780C917A43CB075644</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DBC82EA6708A87E0DFA14435</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FDA94A33FD327014D537899E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -10,6 +10,7 @@
 #import <CoreData/CoreData.h>
 #import "Constants.h"
 #import "NoteTableViewCell.h"
+#import <NSDate+TimeAgo.h>
 @implementation NoteTableViewControllerViewModel
 
 
@@ -55,7 +56,7 @@
     NoteEntity *note  = _array[indexPath.row];
     
     cell.contentLable.text = note.note_content;
-    cell.dateLable.text = @"1/天";
+    cell.dateLable.text = [note.note_create_date timeAgoSimple];
     
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
 
