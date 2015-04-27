@@ -9,6 +9,7 @@
 #import "WriteNoteTableViewController.h"
 #import "WriteNoteTableViewControllerViewModel.h"
 #import <MJRefresh.h>
+#import "Constants.h"
 @interface WriteNoteTableViewController ()
 @property(nonatomic,strong)WriteNoteTableViewControllerViewModel *viewModel;
 @end
@@ -19,9 +20,23 @@
     self.tableView.delegate = nil;
     self.tableView.dataSource = nil;
     _viewModel = nil;
+    _noteModel = nil;
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    if (_noteModel) {
+
+        NSLog(@"你走了修改");
+        
+        _textView.text = _noteModel.note_content;
+        
+    }else{
+       
+        NSLog(@"你走的新建");
+        [_textView becomeFirstResponder];
+    }
+    
     
     _viewModel =[[WriteNoteTableViewControllerViewModel alloc]init];
     // Uncomment the following line to preserve selection between presentations.
@@ -69,12 +84,36 @@
 }
 
 -(void)closeView{
-    if (_textView.text.length!=0) {
-        [_viewModel insertDate:_textView.text andNoteColor:@1];
+   
+    
+    
+    
+    if (_noteModel) {
+        
+        if (![_textView.text isEqualToString:_noteModel.note_content]) {
+            
+            _noteModel.note_content = _textView.text;
+            NSError *error;
+            if (![SharedApp.managedObjectContext save:&error]) {
+                
+                NSLog(@"update error, couldn't save: %@", [error localizedDescription]);
+                
+            }else{
+                NSLog(@"update success....");
+            }
+        }
+    }else{
+        if (_textView.text.length!=0) {
+            [_viewModel insertDate:_textView.text andNoteColor:@1];
+        }
     }
+    
     [self dismissViewControllerAnimated:YES completion:^{
         
     }];
+    
+    
+    _noteModel = nil;
 }
 
 - (void)didReceiveMemoryWarning {

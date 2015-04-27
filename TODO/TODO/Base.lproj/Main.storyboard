@@ -21,7 +21,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dfH-d0-LHx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="419" y="299"/>
+            <point key="canvasLocation" x="306" y="300"/>
         </scene>
         <!--Note Table View Controller-->
         <scene sceneID="TDL-EP-le9">
@@ -36,14 +36,15 @@
                         <color key="sectionIndexBackgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="sectionIndexTrackingBackgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" rowHeight="70" id="rFl-Bb-Ja1" customClass="NoteTableViewCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" rowHeight="70" id="rFl-Bb-Ja1" customClass="NoteTableViewCell">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rFl-Bb-Ja1" id="QON-9o-jlT">
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
-                                    <segue destination="seA-YR-3K3" kind="modal" identifier="Cell" modalTransitionStyle="flipHorizontal" id="UBs-Bc-PkX"/>
+                                    <outlet property="accessoryView" destination="fHw-Gj-l0Y" id="Dko-UC-JXx"/>
+                                    <segue destination="seA-YR-3K3" kind="modal" identifier="Cell" trigger="accessoryAction" modalTransitionStyle="flipHorizontal" id="kNR-dg-Wsf"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -59,7 +60,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eTK-vs-rfO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1131" y="339"/>
+            <point key="canvasLocation" x="1025" y="325"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="ohT-nS-Yg2">
@@ -157,10 +158,10 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j9X-rm-FMk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1878" y="414"/>
+            <point key="canvasLocation" x="1737" y="315"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="UBs-Bc-PkX"/>
+        <segue reference="kNR-dg-Wsf"/>
     </inferredMetricsTieBreakers>
 </document>

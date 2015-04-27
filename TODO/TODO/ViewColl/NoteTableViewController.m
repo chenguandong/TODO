@@ -10,10 +10,11 @@
 #import <MJRefresh.h>
 #import "NoteTableViewControllerViewModel.h"
 #import "NoteTableViewCell.h"
+#import "WriteNoteTableViewController.h"
 @interface NoteTableViewController ()
 
 @property(nonatomic,strong)NoteTableViewControllerViewModel *viewModel;
-@property(nonatomic,strong)UITableViewCell* footCell;
+@property(nonatomic,strong)NoteEntity *noteModel;
 @end
 
 @implementation NoteTableViewController
@@ -23,6 +24,7 @@
     self.tableView.delegate = nil;
     self.tableView.dataSource = nil;
     _viewModel = nil;
+    _noteModel = nil;
 }
 
 - (void)viewDidLoad {
@@ -140,6 +142,15 @@
 }
 
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+
+    _noteModel = _viewModel.array[indexPath.row];
+    
+ 
+   
+    [self performSegueWithIdentifier:@"Cell" sender:self];
+}
+
 /*
 // Override to support rearranging the table view.
 - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
@@ -156,15 +167,26 @@
 
 
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    
+    if ([segue.identifier isEqualToString:@"Cell"]) {
+        
+        WriteNoteTableViewController *writeNote =  [segue destinationViewController];
+        writeNote.noteModel = _noteModel;
+    }
+     
 }
-*/
+-(void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:YES];
+    
+    _noteModel = nil;
+}
 
 
 /*

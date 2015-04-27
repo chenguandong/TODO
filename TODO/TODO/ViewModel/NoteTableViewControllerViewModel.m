@@ -58,7 +58,7 @@
     cell.contentLable.text = note.note_content;
     cell.dateLable.text = [note.note_create_date timeAgoSimple];
     
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    //cell.selectionStyle = UITableViewCellSelectionStyleNone;
 
     return cell;
 }
