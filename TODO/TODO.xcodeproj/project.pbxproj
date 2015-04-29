@@ -16,6 +16,11 @@
 		1804CFB51ADFE813006F0D21 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1804CFB41ADFE813006F0D21 /* Images.xcassets */; };
 		1804CFB81ADFE813006F0D21 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1804CFB61ADFE813006F0D21 /* LaunchScreen.xib */; };
 		1804CFC41ADFE813006F0D21 /* TODOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1804CFC31ADFE813006F0D21 /* TODOTests.m */; };
+		186B83231AEE54DF0066A62D /* note_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 186B83221AEE54DF0066A62D /* note_background.png */; };
+		186B83281AEE5F0A0066A62D /* PSPDFTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 186B83271AEE5F0A0066A62D /* PSPDFTextView.m */; };
+		186B832A1AEE64B40066A62D /* welcome_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 186B83291AEE64B40066A62D /* welcome_bg.png */; };
+		186B832E1AEE6B7E0066A62D /* TouchIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186B832C1AEE6B7E0066A62D /* TouchIDViewController.m */; };
+		186B83311AEE6FB00066A62D /* iconfont-zhiwen.png in Resources */ = {isa = PBXBuildFile; fileRef = 186B83301AEE6FB00066A62D /* iconfont-zhiwen.png */; };
 		1897E5371AE88C7000E7C2A5 /* iconfont-bijiben.png in Resources */ = {isa = PBXBuildFile; fileRef = 1897E5351AE88C7000E7C2A5 /* iconfont-bijiben.png */; };
 		1897E5381AE88C7000E7C2A5 /* iconfont-note.png in Resources */ = {isa = PBXBuildFile; fileRef = 1897E5361AE88C7000E7C2A5 /* iconfont-note.png */; };
 		1897E53B1AE88DB300E7C2A5 /* WriteNoteTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1897E53A1AE88DB300E7C2A5 /* WriteNoteTableViewController.m */; };
@@ -57,6 +62,13 @@
 		1804CFBD1ADFE813006F0D21 /* TODOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TODOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1804CFC21ADFE813006F0D21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1804CFC31ADFE813006F0D21 /* TODOTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TODOTests.m; sourceTree = "<group>"; };
+		186B83221AEE54DF0066A62D /* note_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = note_background.png; sourceTree = "<group>"; };
+		186B83261AEE5F0A0066A62D /* PSPDFTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSPDFTextView.h; sourceTree = "<group>"; };
+		186B83271AEE5F0A0066A62D /* PSPDFTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSPDFTextView.m; sourceTree = "<group>"; };
+		186B83291AEE64B40066A62D /* welcome_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = welcome_bg.png; sourceTree = "<group>"; };
+		186B832B1AEE6B7E0066A62D /* TouchIDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TouchIDViewController.h; path = ViewColl/TouchIDViewController.h; sourceTree = "<group>"; };
+		186B832C1AEE6B7E0066A62D /* TouchIDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TouchIDViewController.m; path = ViewColl/TouchIDViewController.m; sourceTree = "<group>"; };
+		186B83301AEE6FB00066A62D /* iconfont-zhiwen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-zhiwen.png"; sourceTree = "<group>"; };
 		1897E5351AE88C7000E7C2A5 /* iconfont-bijiben.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-bijiben.png"; sourceTree = "<group>"; };
 		1897E5361AE88C7000E7C2A5 /* iconfont-note.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-note.png"; sourceTree = "<group>"; };
 		1897E5391AE88DB300E7C2A5 /* WriteNoteTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WriteNoteTableViewController.h; path = ViewColl/WriteNoteTableViewController.h; sourceTree = "<group>"; };
@@ -101,6 +113,8 @@
 		180468BE1AE65E030077C749 /* ViewColl */ = {
 			isa = PBXGroup;
 			children = (
+				186B832B1AEE6B7E0066A62D /* TouchIDViewController.h */,
+				186B832C1AEE6B7E0066A62D /* TouchIDViewController.m */,
 				180468BF1AE65E300077C749 /* NoteTableViewController.h */,
 				180468C01AE65E300077C749 /* NoteTableViewController.m */,
 				1897E5391AE88DB300E7C2A5 /* WriteNoteTableViewController.h */,
@@ -132,6 +146,7 @@
 		1804CFA31ADFE813006F0D21 /* TODO */ = {
 			isa = PBXGroup;
 			children = (
+				186B83241AEE5F0A0066A62D /* libs */,
 				1897E54B1AE8D69A00E7C2A5 /* Cell */,
 				1897E5441AE8C84100E7C2A5 /* Constants */,
 				1897E5401AE8C3A500E7C2A5 /* ViewModel */,
@@ -177,9 +192,29 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		186B83241AEE5F0A0066A62D /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				186B83251AEE5F0A0066A62D /* PSPDFTextView */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		186B83251AEE5F0A0066A62D /* PSPDFTextView */ = {
+			isa = PBXGroup;
+			children = (
+				186B83261AEE5F0A0066A62D /* PSPDFTextView.h */,
+				186B83271AEE5F0A0066A62D /* PSPDFTextView.m */,
+			);
+			path = PSPDFTextView;
+			sourceTree = "<group>";
+		};
 		1897E5341AE88C7000E7C2A5 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				186B83301AEE6FB00066A62D /* iconfont-zhiwen.png */,
+				186B83291AEE64B40066A62D /* welcome_bg.png */,
+				186B83221AEE54DF0066A62D /* note_background.png */,
 				1897E5561AE8FF2600E7C2A5 /* iconfont-setting.png */,
 				1897E5541AE8E89100E7C2A5 /* iconfont-save.png */,
 				1897E5351AE88C7000E7C2A5 /* iconfont-bijiben.png */,
@@ -295,6 +330,7 @@
 				TargetAttributes = {
 					1804CFA01ADFE813006F0D21 = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = BU39DT6VD4;
 					};
 					1804CFBC1ADFE813006F0D21 = {
 						CreatedOnToolsVersion = 6.3;
@@ -326,12 +362,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				186B83311AEE6FB00066A62D /* iconfont-zhiwen.png in Resources */,
 				1804CFB31ADFE813006F0D21 /* Main.storyboard in Resources */,
+				186B832A1AEE64B40066A62D /* welcome_bg.png in Resources */,
 				1804CFB81ADFE813006F0D21 /* LaunchScreen.xib in Resources */,
 				1897E5571AE8FF2600E7C2A5 /* iconfont-setting.png in Resources */,
 				1897E5381AE88C7000E7C2A5 /* iconfont-note.png in Resources */,
 				1897E5531AE8D79D00E7C2A5 /* NoteTableViewCell.xib in Resources */,
 				1804CFB51ADFE813006F0D21 /* Images.xcassets in Resources */,
+				186B83231AEE54DF0066A62D /* note_background.png in Resources */,
 				1897E5551AE8E89100E7C2A5 /* iconfont-save.png in Resources */,
 				1897E5371AE88C7000E7C2A5 /* iconfont-bijiben.png in Resources */,
 			);
@@ -387,6 +426,7 @@
 				1897E54A1AE8D0EC00E7C2A5 /* WriteNoteTableViewControllerViewModel.m in Sources */,
 				1804CFAA1ADFE813006F0D21 /* AppDelegate.m in Sources */,
 				1897E53F1AE8C32300E7C2A5 /* NoteEntity.m in Sources */,
+				186B83281AEE5F0A0066A62D /* PSPDFTextView.m in Sources */,
 				180468C11AE65E300077C749 /* NoteTableViewController.m in Sources */,
 				1897E5521AE8D79D00E7C2A5 /* NoteTableViewCell.m in Sources */,
 				1804CFAD1ADFE813006F0D21 /* TODO.xcdatamodeld in Sources */,
@@ -394,6 +434,7 @@
 				1804CFB01ADFE813006F0D21 /* ViewController.m in Sources */,
 				1897E5431AE8C3CB00E7C2A5 /* NoteTableViewControllerViewModel.m in Sources */,
 				1804CFA71ADFE813006F0D21 /* main.m in Sources */,
+				186B832E1AEE6B7E0066A62D /* TouchIDViewController.m in Sources */,
 				1897E5471AE8C87700E7C2A5 /* Constants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -524,10 +565,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TODO/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -537,10 +581,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TODO/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

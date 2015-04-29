@@ -38,7 +38,13 @@
     self.tableView.tableFooterView = [UIView new];
     
 
-    [self.tableView setBackgroundColor:[UIColor redColor]];
+    UIImageView *bgImageView =[[UIImageView alloc]initWithFrame:self.view.frame];
+    
+    bgImageView.image = [UIImage imageNamed:@"welcome_bg"];
+    
+    self.tableView.backgroundView =bgImageView;
+    
+    
 }
 
 -(void)viewWillAppear:(BOOL)animated{

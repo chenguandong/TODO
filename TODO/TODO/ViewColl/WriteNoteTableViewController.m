@@ -25,6 +25,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+
     if (_noteModel) {
 
         NSLog(@"你走了修改");
@@ -34,7 +35,7 @@
     }else{
        
         NSLog(@"你走的新建");
-        [_textView becomeFirstResponder];
+      //  [_textView becomeFirstResponder];
     }
     
     
@@ -46,9 +47,20 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
 
-
-    self.tableView.tableHeaderView = _textView;
+    UIImageView *bgImageView =[[UIImageView alloc]initWithFrame:self.view.frame];
     
+    bgImageView.image = [UIImage imageNamed:@"note_background"];
+    
+    self.tableView.backgroundView =bgImageView;
+    
+    
+    self.textView.layer.borderColor = [UIColor whiteColor].CGColor;
+    self.textView.layer.borderWidth = 3;
+    
+    self.textView.layer.cornerRadius = 10;
+    
+    self.textView.layer.masksToBounds = YES;
+
     
     [self setRefreshView];
 }
@@ -123,6 +135,7 @@
 
 #pragma mark - Table view data source
 
+/*
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 
     // Return the number of sections.
@@ -136,7 +149,7 @@
 }
 
 
-
+*/
 
 
 /*
