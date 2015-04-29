@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "NoteEntity.h"
-
+#import "HPGrowingTextView.h"
 @interface WriteNoteTableViewController : UITableViewController
 
-@property (weak, nonatomic) IBOutlet UITextView *textView;
+@property (weak, nonatomic) IBOutlet HPGrowingTextView *textView;
 @property(nonatomic,strong)NoteEntity *noteModel;
 @end

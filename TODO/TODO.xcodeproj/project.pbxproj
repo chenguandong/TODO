@@ -21,6 +21,8 @@
 		186B832A1AEE64B40066A62D /* welcome_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 186B83291AEE64B40066A62D /* welcome_bg.png */; };
 		186B832E1AEE6B7E0066A62D /* TouchIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186B832C1AEE6B7E0066A62D /* TouchIDViewController.m */; };
 		186B83311AEE6FB00066A62D /* iconfont-zhiwen.png in Resources */ = {isa = PBXBuildFile; fileRef = 186B83301AEE6FB00066A62D /* iconfont-zhiwen.png */; };
+		186B83371AF077BF0066A62D /* HPGrowingTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 186B83341AF077BF0066A62D /* HPGrowingTextView.m */; };
+		186B83381AF077BF0066A62D /* HPTextViewInternal.m in Sources */ = {isa = PBXBuildFile; fileRef = 186B83361AF077BF0066A62D /* HPTextViewInternal.m */; };
 		1897E5371AE88C7000E7C2A5 /* iconfont-bijiben.png in Resources */ = {isa = PBXBuildFile; fileRef = 1897E5351AE88C7000E7C2A5 /* iconfont-bijiben.png */; };
 		1897E5381AE88C7000E7C2A5 /* iconfont-note.png in Resources */ = {isa = PBXBuildFile; fileRef = 1897E5361AE88C7000E7C2A5 /* iconfont-note.png */; };
 		1897E53B1AE88DB300E7C2A5 /* WriteNoteTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1897E53A1AE88DB300E7C2A5 /* WriteNoteTableViewController.m */; };
@@ -69,6 +71,10 @@
 		186B832B1AEE6B7E0066A62D /* TouchIDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TouchIDViewController.h; path = ViewColl/TouchIDViewController.h; sourceTree = "<group>"; };
 		186B832C1AEE6B7E0066A62D /* TouchIDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TouchIDViewController.m; path = ViewColl/TouchIDViewController.m; sourceTree = "<group>"; };
 		186B83301AEE6FB00066A62D /* iconfont-zhiwen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-zhiwen.png"; sourceTree = "<group>"; };
+		186B83331AF077BF0066A62D /* HPGrowingTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPGrowingTextView.h; sourceTree = "<group>"; };
+		186B83341AF077BF0066A62D /* HPGrowingTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPGrowingTextView.m; sourceTree = "<group>"; };
+		186B83351AF077BF0066A62D /* HPTextViewInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPTextViewInternal.h; sourceTree = "<group>"; };
+		186B83361AF077BF0066A62D /* HPTextViewInternal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPTextViewInternal.m; sourceTree = "<group>"; };
 		1897E5351AE88C7000E7C2A5 /* iconfont-bijiben.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-bijiben.png"; sourceTree = "<group>"; };
 		1897E5361AE88C7000E7C2A5 /* iconfont-note.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-note.png"; sourceTree = "<group>"; };
 		1897E5391AE88DB300E7C2A5 /* WriteNoteTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WriteNoteTableViewController.h; path = ViewColl/WriteNoteTableViewController.h; sourceTree = "<group>"; };
@@ -195,6 +201,7 @@
 		186B83241AEE5F0A0066A62D /* libs */ = {
 			isa = PBXGroup;
 			children = (
+				186B83321AF077BF0066A62D /* textView */,
 				186B83251AEE5F0A0066A62D /* PSPDFTextView */,
 			);
 			path = libs;
@@ -207,6 +214,17 @@
 				186B83271AEE5F0A0066A62D /* PSPDFTextView.m */,
 			);
 			path = PSPDFTextView;
+			sourceTree = "<group>";
+		};
+		186B83321AF077BF0066A62D /* textView */ = {
+			isa = PBXGroup;
+			children = (
+				186B83331AF077BF0066A62D /* HPGrowingTextView.h */,
+				186B83341AF077BF0066A62D /* HPGrowingTextView.m */,
+				186B83351AF077BF0066A62D /* HPTextViewInternal.h */,
+				186B83361AF077BF0066A62D /* HPTextViewInternal.m */,
+			);
+			path = textView;
 			sourceTree = "<group>";
 		};
 		1897E5341AE88C7000E7C2A5 /* Images */ = {
@@ -432,6 +450,8 @@
 				1804CFAD1ADFE813006F0D21 /* TODO.xcdatamodeld in Sources */,
 				1897E53B1AE88DB300E7C2A5 /* WriteNoteTableViewController.m in Sources */,
 				1804CFB01ADFE813006F0D21 /* ViewController.m in Sources */,
+				186B83381AF077BF0066A62D /* HPTextViewInternal.m in Sources */,
+				186B83371AF077BF0066A62D /* HPGrowingTextView.m in Sources */,
 				1897E5431AE8C3CB00E7C2A5 /* NoteTableViewControllerViewModel.m in Sources */,
 				1804CFA71ADFE813006F0D21 /* main.m in Sources */,
 				186B832E1AEE6B7E0066A62D /* TouchIDViewController.m in Sources */,

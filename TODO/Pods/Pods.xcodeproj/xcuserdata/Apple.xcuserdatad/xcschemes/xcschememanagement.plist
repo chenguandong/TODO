@@ -4,11 +4,6 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-IQKeyboardManager.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-MJRefresh.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -47,42 +42,37 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>000856063F490DEDF0D8E5C9</key>
+		<key>260E9F2F5F9BE22F216CB8E1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>0AC7DB7ADB1B35580495DCF8</key>
+		<key>27BD0DE71500C6D877FE20B9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>95257538E7C7B2E27044EFA6</key>
+		<key>5D3514F1A081A47B45395DCC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9AA0D9673938AF4941415A63</key>
+		<key>6E94226C2EA8C0C44FB77D91</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9C0540ECA125E446552C3845</key>
+		<key>9100565D6252C8485D8A66B6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9D1F8FCDC12FEB5097BAF55C</key>
+		<key>D10B730200BB841F54B99450</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D1C1F4E817BDE3CC5E46138A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>D5A1A178818483484E898B4D</key>
+		<key>E5A47C7E093ADBCE71414CD2</key>
 		<dict>
 			<key>primary</key>
 			<true/>

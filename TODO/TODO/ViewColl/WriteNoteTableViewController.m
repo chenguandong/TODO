@@ -10,6 +10,7 @@
 #import "WriteNoteTableViewControllerViewModel.h"
 #import <MJRefresh.h>
 #import "Constants.h"
+#import "HPGrowingTextView.h"
 @interface WriteNoteTableViewController ()
 @property(nonatomic,strong)WriteNoteTableViewControllerViewModel *viewModel;
 @end
@@ -63,6 +64,28 @@
 
     
     [self setRefreshView];
+    
+    [self initTextView];
+}
+
+
+-(void)initTextView{
+
+    _textView.isScrollable = NO;
+    _textView.contentInset = UIEdgeInsetsMake(0, 5, 0, 5);
+    _textView.backgroundColor =[UIColor orangeColor];
+    _textView.textColor =[UIColor whiteColor];
+    _textView.minNumberOfLines = 20;
+    _textView.maxNumberOfLines = 30;
+    // you can also set the maximum height in points with maxHeight
+    // textView.maxHeight = 200.0f;
+    _textView.returnKeyType = UIReturnKeyDefault; //just as an example
+    _textView.font = [UIFont systemFontOfSize:18.0f];
+    _textView.delegate = self;
+    _textView.internalTextView.scrollIndicatorInsets = UIEdgeInsetsMake(5, 0, 5, 0);
+    
+    _textView.placeholder = @"请输入待办事项";
+    _textView.placeholderColor = [UIColor whiteColor];
 }
 
 - (BOOL)prefersStatusBarHidden

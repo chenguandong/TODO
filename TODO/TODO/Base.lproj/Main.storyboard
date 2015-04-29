@@ -165,6 +165,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="LWk-Ll-qsR" customClass="HPGrowingTextView">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="300" id="0IX-5g-P5C"/>
+                            </constraints>
+                        </view>
                         <sections>
                             <tableViewSection id="qwX-c3-lqJ">
                                 <cells>
@@ -172,24 +180,8 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ApP-XZ-QG4" id="ZVG-bj-KiC">
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="tHA-Jh-ad4">
-                                                    <rect key="frame" x="40" y="40" width="521" height="520"/>
-                                                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
-                                                    <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES"/>
-                                                </textView>
-                                            </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <constraints>
-                                                <constraint firstItem="tHA-Jh-ad4" firstAttribute="top" secondItem="ZVG-bj-KiC" secondAttribute="top" constant="40" id="3qm-mq-G0j"/>
-                                                <constraint firstItem="tHA-Jh-ad4" firstAttribute="leading" secondItem="ZVG-bj-KiC" secondAttribute="leading" constant="40" id="q6U-ys-BQK"/>
-                                                <constraint firstAttribute="bottom" secondItem="tHA-Jh-ad4" secondAttribute="bottom" constant="40" id="sc8-mh-nol"/>
-                                                <constraint firstAttribute="trailing" secondItem="tHA-Jh-ad4" secondAttribute="trailing" constant="39" id="xXn-EM-H2B"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
@@ -203,7 +195,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="jMi-Zw-nZQ"/>
                     <connections>
-                        <outlet property="textView" destination="tHA-Jh-ad4" id="Sl1-Xv-IP6"/>
+                        <outlet property="textView" destination="LWk-Ll-qsR" id="2KN-AK-j13"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j9X-rm-FMk" userLabel="First Responder" sceneMemberID="firstResponder"/>

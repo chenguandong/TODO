@@ -47,8 +47,7 @@ install_resource()
       ;;
   esac
 }
-          install_resource "IQKeyboardManager/IQKeyBoardManager/Resources/IQKeyboardManager.bundle"
-                    install_resource "MJRefresh/MJRefreshExample/MJRefreshExample/MJRefresh/MJRefresh.bundle"
+          install_resource "MJRefresh/MJRefreshExample/MJRefreshExample/MJRefresh/MJRefresh.bundle"
                     install_resource "NSDate+TimeAgo/NSDateTimeAgo.bundle"
                     install_resource "SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle"
           

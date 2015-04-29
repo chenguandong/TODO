@@ -6,12 +6,6 @@
 // project.
 
 
-// IQKeyboardManager
-#define COCOAPODS_POD_AVAILABLE_IQKeyboardManager
-#define COCOAPODS_VERSION_MAJOR_IQKeyboardManager 3
-#define COCOAPODS_VERSION_MINOR_IQKeyboardManager 2
-#define COCOAPODS_VERSION_PATCH_IQKeyboardManager 3
-
 // MJRefresh
 #define COCOAPODS_POD_AVAILABLE_MJRefresh
 #define COCOAPODS_VERSION_MAJOR_MJRefresh 1

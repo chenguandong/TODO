@@ -1,5 +1,4 @@
 PODS:
-  - IQKeyboardManager (3.2.3)
   - MJRefresh (1.4.5)
   - NSDate+TimeAgo (1.0.3)
   - RESideMenu (4.0.7)
@@ -8,7 +7,6 @@ PODS:
   - SWTableViewCell (0.3.7)
 
 DEPENDENCIES:
-  - IQKeyboardManager
   - MJRefresh
   - NSDate+TimeAgo
   - RESideMenu (~> 4.0.7)
@@ -17,7 +15,6 @@ DEPENDENCIES:
   - SWTableViewCell (~> 0.3.7)
 
 SPEC CHECKSUMS:
-  IQKeyboardManager: 6ca5c54e3776eb54af4c7caf515833f3cd761d59
   MJRefresh: 4b24394e577ea399fbc926e5b6072317aae2c152
   NSDate+TimeAgo: 416f55d2696d3744c313091c5a9280d47f8238fe
   RESideMenu: f24c508404b49c667344c54aba7e590883533958
