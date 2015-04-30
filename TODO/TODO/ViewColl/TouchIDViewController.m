@@ -26,7 +26,7 @@
     [super viewDidLoad];
     
  
-    
+    _enteredPincode = (NSString*)[[NSUserDefaults standardUserDefaults]valueForKey:DTpincode];
 
     
     
@@ -39,7 +39,7 @@
     
     
     
-    _enteredPincode = (NSString*)[[NSUserDefaults standardUserDefaults]valueForKey:DTpincode];
+    
     
     NSLog(@"%@",_enteredPincode);
     
@@ -55,11 +55,7 @@
         [viewController setDataSource:self];
         
         [self presentViewController:viewController animated:YES completion:NULL];
-        //        [viewController willMoveToParentViewController:self];
-        //        [self addChildViewController:viewController];
-        //        viewController.view.frame = self.view.frame;
-        //        [self.view addSubview:viewController.view];
-        //        [viewController didMoveToParentViewController:self];
+      
         
     }
 
@@ -72,7 +68,22 @@
         [self performSegueWithIdentifier:@"Touch" sender:self];
         return;
     }
-     [self initCheckPassCode];
+    
+    
+    //有密码
+    if (_enteredPincode) {
+        
+        if ([[NSUserDefaults standardUserDefaults] boolForKey:touchLock]) {
+            
+            [self initCheckTouchID];
+            
+        }else{
+        
+            [self initCheckPassCode];
+        }
+        
+        
+    }
    
 }
 
@@ -88,6 +99,8 @@
         NSLog(@"error:%@", error);
         NSString *msg = [NSString stringWithFormat:@"Can't evaluate policy! %@", error.localizedDescription];
         [SVProgressHUD showErrorWithStatus:msg];
+        
+        [self initCheckPassCode];
         return;
     }
     
@@ -108,7 +121,9 @@
              }
              else {
                  NSLog(@"error:%@", authenticationError);
-                 [SVProgressHUD showErrorWithStatus:[NSString stringWithFormat:@"验证失败,请重新验证"]];
+                // [SVProgressHUD showErrorWithStatus:[NSString stringWithFormat:@"验证失败,请重新验证"]];
+                 
+                 [self initCheckPassCode];
              }
          });
      }];
@@ -142,7 +157,7 @@
 
 - (BOOL)allowTouchIDLockScreenViewController:(JKLLockScreenViewController *)lockScreenViewController {
     
-    return YES;
+    return NO;
 }
 
 

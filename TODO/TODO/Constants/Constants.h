@@ -20,5 +20,9 @@ UIKIT_EXTERN NSString *const note_delete_date;
 UIKIT_EXTERN NSString *const note_color;
 
 //NSUserDefault property name
+//是否密码锁定
 UIKIT_EXTERN NSString *const passLock;
+//是否开启TouchID
+UIKIT_EXTERN NSString *const touchLock;
+//密码
 UIKIT_EXTERN NSString *const DTpincode;

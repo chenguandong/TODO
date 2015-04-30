@@ -11,15 +11,22 @@
 #import "Constants.h"
 @interface MenuTableViewController ()<JKLLockScreenViewControllerDataSource, JKLLockScreenViewControllerDelegate>
 @property (nonatomic, strong) NSString * enteredPincode;
-
+@property(nonatomic,strong) NSUserDefaults *userDefault;
 @end
 
 @implementation MenuTableViewController
 
+
+-(void)dealloc{
+    _userDefault = nil;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
     
+    [_passWordSwitchView setOn:[userDefault boolForKey:passLock] animated:YES];
+    [_TouchSwitchView setOn:[userDefault boolForKey:touchLock] animated:YES];
 }
 - (IBAction)changeState:(id)sender {
     
@@ -34,9 +41,19 @@
     switch ([sender tag]) {
         case 0:
             
+            [_userDefault setBool:swith.isOn forKey:touchLock];
+            
+            [_userDefault synchronize];
+            
+           
+            
             break;
         case 1:
         {
+            [_userDefault setBool:swith.isOn forKey:passLock];
+            
+            [_userDefault synchronize];
+            
             if ([swith isOn]) {
                 JKLLockScreenViewController *viewController = [[JKLLockScreenViewController alloc] initWithNibName:NSStringFromClass([JKLLockScreenViewController class]) bundle:nil];
                 [viewController setLockScreenMode:[sender tag]];    // enum { LockScreenModeNormal, LockScreenModeNew, LockScreenModeChange }

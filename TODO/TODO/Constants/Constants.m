@@ -18,5 +18,9 @@ NSString *const noteTableName = @"NoteEntity";
 
 //----NSUserDefault----//
 
+//bool
  NSString *const passLock = @"passLock";
+//string
  NSString *const DTpincode = @"DTenteredPincode";
+//bool
+ NSString *const touchLock = @"touchLock";
