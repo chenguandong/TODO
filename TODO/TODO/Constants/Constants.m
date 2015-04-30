@@ -15,3 +15,8 @@ NSString *const noteTableName = @"NoteEntity";
  NSString *const note_content = @"note_content";
  NSString *const note_delete_date = @"note_delete_date";
  NSString *const note_color = @"note_color";
+
+//----NSUserDefault----//
+
+ NSString *const passLock = @"passLock";
+ NSString *const DTpincode = @"DTenteredPincode";

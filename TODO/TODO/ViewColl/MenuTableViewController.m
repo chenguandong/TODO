@@ -8,6 +8,7 @@
 
 #import "MenuTableViewController.h"
 #import "JKLLockScreenViewController.h"
+#import "Constants.h"
 @interface MenuTableViewController ()<JKLLockScreenViewControllerDataSource, JKLLockScreenViewControllerDelegate>
 @property (nonatomic, strong) NSString * enteredPincode;
 
@@ -41,7 +42,14 @@
                 [viewController setLockScreenMode:[sender tag]];    // enum { LockScreenModeNormal, LockScreenModeNew, LockScreenModeChange }
                 [viewController setDelegate:self];
                 [viewController setDataSource:self];
+                
+                
+               
+                
                 [self presentViewController:viewController animated:YES completion:NULL];
+                
+                
+               
             }
 
         
@@ -70,6 +78,18 @@
 - (void)unlockWasSuccessfulLockScreenViewController:(JKLLockScreenViewController *)lockScreenViewController pincode:(NSString *)pincode {
     
     self.enteredPincode = pincode;
+    
+    NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
+    [userDefault setBool:YES forKey:passLock];
+    
+    
+    NSLog(@"%@",_enteredPincode);
+    
+
+    [userDefault setObject:_enteredPincode forKey:DTpincode];
+    [userDefault synchronize];
+    
+    NSLog(@"%@",[[NSUserDefaults standardUserDefaults]valueForKey:DTpincode]);
 }
 
 #pragma mark -
