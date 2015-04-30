@@ -38,6 +38,7 @@
 		18FE3CE41AF1B488006D7536 /* JKLLockScreenPincodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FE3CDF1AF1B488006D7536 /* JKLLockScreenPincodeView.m */; };
 		18FE3CE51AF1B488006D7536 /* JKLLockScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FE3CE11AF1B488006D7536 /* JKLLockScreenViewController.m */; };
 		18FE3CE61AF1B488006D7536 /* JKLLockScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18FE3CE21AF1B488006D7536 /* JKLLockScreenViewController.xib */; };
+		18FE3CE91AF1B603006D7536 /* MenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FE3CE81AF1B603006D7536 /* MenuTableViewController.m */; };
 		E044BC9E9E50F283E7DCD829 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED806C46CC5D8A3007BD010 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -103,6 +104,8 @@
 		18FE3CE01AF1B488006D7536 /* JKLLockScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKLLockScreenViewController.h; sourceTree = "<group>"; };
 		18FE3CE11AF1B488006D7536 /* JKLLockScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKLLockScreenViewController.m; sourceTree = "<group>"; };
 		18FE3CE21AF1B488006D7536 /* JKLLockScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JKLLockScreenViewController.xib; sourceTree = "<group>"; };
+		18FE3CE71AF1B603006D7536 /* MenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuTableViewController.h; path = ViewColl/MenuTableViewController.h; sourceTree = "<group>"; };
+		18FE3CE81AF1B603006D7536 /* MenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuTableViewController.m; path = ViewColl/MenuTableViewController.m; sourceTree = "<group>"; };
 		52D650BC5F0A4C851F28E525 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		6ED806C46CC5D8A3007BD010 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EC85B372C1884860BC2CBC9 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -136,6 +139,8 @@
 				180468C01AE65E300077C749 /* NoteTableViewController.m */,
 				1897E5391AE88DB300E7C2A5 /* WriteNoteTableViewController.h */,
 				1897E53A1AE88DB300E7C2A5 /* WriteNoteTableViewController.m */,
+				18FE3CE71AF1B603006D7536 /* MenuTableViewController.h */,
+				18FE3CE81AF1B603006D7536 /* MenuTableViewController.m */,
 			);
 			name = ViewColl;
 			sourceTree = "<group>";
@@ -479,6 +484,7 @@
 				1804CFAD1ADFE813006F0D21 /* TODO.xcdatamodeld in Sources */,
 				1897E53B1AE88DB300E7C2A5 /* WriteNoteTableViewController.m in Sources */,
 				1804CFB01ADFE813006F0D21 /* ViewController.m in Sources */,
+				18FE3CE91AF1B603006D7536 /* MenuTableViewController.m in Sources */,
 				186B83381AF077BF0066A62D /* HPTextViewInternal.m in Sources */,
 				186B83371AF077BF0066A62D /* HPGrowingTextView.m in Sources */,
 				18FE3CE51AF1B488006D7536 /* JKLLockScreenViewController.m in Sources */,
