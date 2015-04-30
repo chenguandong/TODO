@@ -34,6 +34,10 @@
 		1897E5531AE8D79D00E7C2A5 /* NoteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1897E5511AE8D79D00E7C2A5 /* NoteTableViewCell.xib */; };
 		1897E5551AE8E89100E7C2A5 /* iconfont-save.png in Resources */ = {isa = PBXBuildFile; fileRef = 1897E5541AE8E89100E7C2A5 /* iconfont-save.png */; };
 		1897E5571AE8FF2600E7C2A5 /* iconfont-setting.png in Resources */ = {isa = PBXBuildFile; fileRef = 1897E5561AE8FF2600E7C2A5 /* iconfont-setting.png */; };
+		18FE3CE31AF1B488006D7536 /* JKLLockScreenNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FE3CDD1AF1B488006D7536 /* JKLLockScreenNumber.m */; };
+		18FE3CE41AF1B488006D7536 /* JKLLockScreenPincodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FE3CDF1AF1B488006D7536 /* JKLLockScreenPincodeView.m */; };
+		18FE3CE51AF1B488006D7536 /* JKLLockScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FE3CE11AF1B488006D7536 /* JKLLockScreenViewController.m */; };
+		18FE3CE61AF1B488006D7536 /* JKLLockScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18FE3CE21AF1B488006D7536 /* JKLLockScreenViewController.xib */; };
 		E044BC9E9E50F283E7DCD829 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED806C46CC5D8A3007BD010 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -92,6 +96,13 @@
 		1897E5511AE8D79D00E7C2A5 /* NoteTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NoteTableViewCell.xib; path = Cell/NoteTableViewCell.xib; sourceTree = "<group>"; };
 		1897E5541AE8E89100E7C2A5 /* iconfont-save.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-save.png"; sourceTree = "<group>"; };
 		1897E5561AE8FF2600E7C2A5 /* iconfont-setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-setting.png"; sourceTree = "<group>"; };
+		18FE3CDC1AF1B488006D7536 /* JKLLockScreenNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKLLockScreenNumber.h; sourceTree = "<group>"; };
+		18FE3CDD1AF1B488006D7536 /* JKLLockScreenNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKLLockScreenNumber.m; sourceTree = "<group>"; };
+		18FE3CDE1AF1B488006D7536 /* JKLLockScreenPincodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKLLockScreenPincodeView.h; sourceTree = "<group>"; };
+		18FE3CDF1AF1B488006D7536 /* JKLLockScreenPincodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKLLockScreenPincodeView.m; sourceTree = "<group>"; };
+		18FE3CE01AF1B488006D7536 /* JKLLockScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKLLockScreenViewController.h; sourceTree = "<group>"; };
+		18FE3CE11AF1B488006D7536 /* JKLLockScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKLLockScreenViewController.m; sourceTree = "<group>"; };
+		18FE3CE21AF1B488006D7536 /* JKLLockScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JKLLockScreenViewController.xib; sourceTree = "<group>"; };
 		52D650BC5F0A4C851F28E525 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		6ED806C46CC5D8A3007BD010 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EC85B372C1884860BC2CBC9 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -201,6 +212,7 @@
 		186B83241AEE5F0A0066A62D /* libs */ = {
 			isa = PBXGroup;
 			children = (
+				18FE3CDB1AF1B488006D7536 /* LockScreenViewController */,
 				186B83321AF077BF0066A62D /* textView */,
 				186B83251AEE5F0A0066A62D /* PSPDFTextView */,
 			);
@@ -278,6 +290,20 @@
 				1897E5511AE8D79D00E7C2A5 /* NoteTableViewCell.xib */,
 			);
 			name = Cell;
+			sourceTree = "<group>";
+		};
+		18FE3CDB1AF1B488006D7536 /* LockScreenViewController */ = {
+			isa = PBXGroup;
+			children = (
+				18FE3CDC1AF1B488006D7536 /* JKLLockScreenNumber.h */,
+				18FE3CDD1AF1B488006D7536 /* JKLLockScreenNumber.m */,
+				18FE3CDE1AF1B488006D7536 /* JKLLockScreenPincodeView.h */,
+				18FE3CDF1AF1B488006D7536 /* JKLLockScreenPincodeView.m */,
+				18FE3CE01AF1B488006D7536 /* JKLLockScreenViewController.h */,
+				18FE3CE11AF1B488006D7536 /* JKLLockScreenViewController.m */,
+				18FE3CE21AF1B488006D7536 /* JKLLockScreenViewController.xib */,
+			);
+			path = LockScreenViewController;
 			sourceTree = "<group>";
 		};
 		BE41EC7AB8A15760AEB62757 /* Frameworks */ = {
@@ -385,6 +411,7 @@
 				186B832A1AEE64B40066A62D /* welcome_bg.png in Resources */,
 				1804CFB81ADFE813006F0D21 /* LaunchScreen.xib in Resources */,
 				1897E5571AE8FF2600E7C2A5 /* iconfont-setting.png in Resources */,
+				18FE3CE61AF1B488006D7536 /* JKLLockScreenViewController.xib in Resources */,
 				1897E5381AE88C7000E7C2A5 /* iconfont-note.png in Resources */,
 				1897E5531AE8D79D00E7C2A5 /* NoteTableViewCell.xib in Resources */,
 				1804CFB51ADFE813006F0D21 /* Images.xcassets in Resources */,
@@ -444,6 +471,8 @@
 				1897E54A1AE8D0EC00E7C2A5 /* WriteNoteTableViewControllerViewModel.m in Sources */,
 				1804CFAA1ADFE813006F0D21 /* AppDelegate.m in Sources */,
 				1897E53F1AE8C32300E7C2A5 /* NoteEntity.m in Sources */,
+				18FE3CE41AF1B488006D7536 /* JKLLockScreenPincodeView.m in Sources */,
+				18FE3CE31AF1B488006D7536 /* JKLLockScreenNumber.m in Sources */,
 				186B83281AEE5F0A0066A62D /* PSPDFTextView.m in Sources */,
 				180468C11AE65E300077C749 /* NoteTableViewController.m in Sources */,
 				1897E5521AE8D79D00E7C2A5 /* NoteTableViewCell.m in Sources */,
@@ -452,6 +481,7 @@
 				1804CFB01ADFE813006F0D21 /* ViewController.m in Sources */,
 				186B83381AF077BF0066A62D /* HPTextViewInternal.m in Sources */,
 				186B83371AF077BF0066A62D /* HPGrowingTextView.m in Sources */,
+				18FE3CE51AF1B488006D7536 /* JKLLockScreenViewController.m in Sources */,
 				1897E5431AE8C3CB00E7C2A5 /* NoteTableViewControllerViewModel.m in Sources */,
 				1804CFA71ADFE813006F0D21 /* main.m in Sources */,
 				186B832E1AEE6B7E0066A62D /* TouchIDViewController.m in Sources */,
