@@ -10,7 +10,7 @@
 #import "WriteNoteTableViewControllerViewModel.h"
 #import <MJRefresh.h>
 #import "Constants.h"
-#import "HPGrowingTextView.h"
+CGFloat const cornerRadiusValue = 20;
 @interface WriteNoteTableViewController ()
 @property(nonatomic,strong)WriteNoteTableViewControllerViewModel *viewModel;
 @end
@@ -55,37 +55,77 @@
     self.tableView.backgroundView =bgImageView;
     
     
-    self.textView.layer.borderColor = [UIColor whiteColor].CGColor;
-    self.textView.layer.borderWidth = 3;
+    self.textView.layer.borderColor = [UIColor clearColor].CGColor;
+    self.textView.layer.borderWidth = 50;
     
-    self.textView.layer.cornerRadius = 10;
+    self.textView.layer.cornerRadius = 5;
     
     self.textView.layer.masksToBounds = YES;
 
     
+    
     [self setRefreshView];
     
     [self initTextView];
+    
+    [self initColor];
+    
 }
 
 
--(void)initTextView{
+-(void)initColor{
+    
+    _buttonColor1.layer.cornerRadius = cornerRadiusValue;
+    _buttonColor2.layer.cornerRadius = cornerRadiusValue;
+    _buttonColor3.layer.cornerRadius = cornerRadiusValue;
+    _buttonColor4.layer.cornerRadius = cornerRadiusValue;
+    _buttonColor5.layer.cornerRadius = cornerRadiusValue;
+    
+    [_buttonColor1 setTitle:@" " forState:UIControlStateNormal];
+    [_buttonColor2 setTitle:@" " forState:UIControlStateNormal];
+    [_buttonColor3 setTitle:@" " forState:UIControlStateNormal];
+    [_buttonColor4 setTitle:@" " forState:UIControlStateNormal];
+    [_buttonColor5 setTitle:@" " forState:UIControlStateNormal];
 
-    _textView.isScrollable = NO;
+    
+}
+- (IBAction)changeTextViewBackgroundColor:(id)sender {
+    
+    if([sender isKindOfClass:[UIButton class]]){
+        UIButton *button =sender;
+
+        _textView.backgroundColor = button.backgroundColor;
+    
+    }
+        
+  
+    
+}
+
+-(void)initTextView{
+    
+    _textView.font = [UIFont systemFontOfSize:18.0f];
+    _textView.textColor = [UIColor whiteColor];
+
+/*
+    _textView.isScrollable = YES;
     _textView.contentInset = UIEdgeInsetsMake(0, 5, 0, 5);
     _textView.backgroundColor =[UIColor orangeColor];
     _textView.textColor =[UIColor whiteColor];
-    _textView.minNumberOfLines = 20;
+    _textView.minNumberOfLines = 15;
     _textView.maxNumberOfLines = 30;
     // you can also set the maximum height in points with maxHeight
-    // textView.maxHeight = 200.0f;
+    _textView.maxHeight = self.view.bounds.size.height/2;
+    _textView.minHeight = self.view.bounds.size.height/2;
     _textView.returnKeyType = UIReturnKeyDefault; //just as an example
     _textView.font = [UIFont systemFontOfSize:18.0f];
-    _textView.delegate = self;
-    _textView.internalTextView.scrollIndicatorInsets = UIEdgeInsetsMake(5, 0, 5, 0);
+    //_textView.delegate = self;
+    _textView.internalTextView.scrollIndicatorInsets = UIEdgeInsetsMake(0, 0, 0, 0);
     
     _textView.placeholder = @"请输入待办事项";
     _textView.placeholderColor = [UIColor whiteColor];
+ 
+ */
 }
 
 - (BOOL)prefersStatusBarHidden

@@ -10,7 +10,7 @@
 #define COCOAPODS_POD_AVAILABLE_MJRefresh
 #define COCOAPODS_VERSION_MAJOR_MJRefresh 1
 #define COCOAPODS_VERSION_MINOR_MJRefresh 4
-#define COCOAPODS_VERSION_PATCH_MJRefresh 5
+#define COCOAPODS_VERSION_PATCH_MJRefresh 6
 
 // NSDate+TimeAgo
 #define COCOAPODS_POD_AVAILABLE_NSDate_TimeAgo
@@ -23,6 +23,18 @@
 #define COCOAPODS_VERSION_MAJOR_RESideMenu 4
 #define COCOAPODS_VERSION_MINOR_RESideMenu 0
 #define COCOAPODS_VERSION_PATCH_RESideMenu 7
+
+// RFKeyboardToolbar
+#define COCOAPODS_POD_AVAILABLE_RFKeyboardToolbar
+#define COCOAPODS_VERSION_MAJOR_RFKeyboardToolbar 1
+#define COCOAPODS_VERSION_MINOR_RFKeyboardToolbar 3
+#define COCOAPODS_VERSION_PATCH_RFKeyboardToolbar 0
+
+// RFMarkdownTextView
+#define COCOAPODS_POD_AVAILABLE_RFMarkdownTextView
+#define COCOAPODS_VERSION_MAJOR_RFMarkdownTextView 1
+#define COCOAPODS_VERSION_MINOR_RFMarkdownTextView 4
+#define COCOAPODS_VERSION_PATCH_RFMarkdownTextView 0
 
 // SVProgressHUD
 #define COCOAPODS_POD_AVAILABLE_SVProgressHUD
