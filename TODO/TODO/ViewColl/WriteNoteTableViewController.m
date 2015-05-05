@@ -13,6 +13,8 @@
 CGFloat const cornerRadiusValue = 20;
 @interface WriteNoteTableViewController ()
 @property(nonatomic,strong)WriteNoteTableViewControllerViewModel *viewModel;
+@property(nonatomic,assign)int colorValue;
+@property(nonatomic,strong)NSArray *colorArr;
 @end
 
 @implementation WriteNoteTableViewController
@@ -22,8 +24,11 @@ CGFloat const cornerRadiusValue = 20;
     self.tableView.dataSource = nil;
     _viewModel = nil;
     _noteModel = nil;
+    _colorArr = nil;
 }
+
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
     
 
@@ -75,6 +80,19 @@ CGFloat const cornerRadiusValue = 20;
 
 -(void)initColor{
     
+    _colorValue =[_noteModel.note_color intValue];
+    
+    _colorArr = @[
+                  _buttonColor1.backgroundColor,
+                  _buttonColor2.backgroundColor,
+                  _buttonColor3.backgroundColor,
+                  _buttonColor4.backgroundColor,
+                  _buttonColor5.backgroundColor,
+                  ];
+
+    
+    _textView.backgroundColor = _colorArr[_colorValue];
+    
     _buttonColor1.layer.cornerRadius = cornerRadiusValue;
     _buttonColor2.layer.cornerRadius = cornerRadiusValue;
     _buttonColor3.layer.cornerRadius = cornerRadiusValue;
@@ -94,6 +112,11 @@ CGFloat const cornerRadiusValue = 20;
     if([sender isKindOfClass:[UIButton class]]){
         UIButton *button =sender;
 
+        _colorValue = (int)button.tag ;
+        
+        
+        NSLog(@"%ld",button.tag);
+        
         _textView.backgroundColor = button.backgroundColor;
     
     }
@@ -165,9 +188,10 @@ CGFloat const cornerRadiusValue = 20;
     
     if (_noteModel) {
         
-        if (![_textView.text isEqualToString:_noteModel.note_content]) {
+        if (![_textView.text isEqualToString:_noteModel.note_content]||(_colorValue!=[[_noteModel note_color] intValue])) {
             
             _noteModel.note_content = _textView.text;
+            _noteModel.note_color = [NSNumber numberWithInt:_colorValue];
             NSError *error;
             if (![SharedApp.managedObjectContext save:&error]) {
                 
@@ -179,7 +203,8 @@ CGFloat const cornerRadiusValue = 20;
         }
     }else{
         if (_textView.text.length!=0) {
-            [_viewModel insertDate:_textView.text andNoteColor:@1];
+            [_viewModel insertDate:_textView.text andNoteColor:[NSNumber numberWithInt:_colorValue]];
+
         }
     }
     
