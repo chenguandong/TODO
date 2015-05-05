@@ -18,6 +18,7 @@
     self.layer.borderWidth = 0;
     self.layer.contentsScale = 20;
     self.layer.masksToBounds = YES;
+    self.backgroundColor = [UIColor clearColor];
 
 }
 

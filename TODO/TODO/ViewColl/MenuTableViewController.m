@@ -9,6 +9,7 @@
 #import "MenuTableViewController.h"
 #import "JKLLockScreenViewController.h"
 #import "Constants.h"
+@import LocalAuthentication;
 @interface MenuTableViewController ()<JKLLockScreenViewControllerDataSource, JKLLockScreenViewControllerDelegate>
 @property (nonatomic, strong) NSString * enteredPincode;
 @property(nonatomic,strong) NSUserDefaults *userDefault;
@@ -27,7 +28,35 @@
     
     [_passWordSwitchView setOn:[userDefault boolForKey:passLock] animated:YES];
     [_TouchSwitchView setOn:[userDefault boolForKey:touchLock] animated:YES];
+    
+    
+    [self checkTouchID];
+    
+    //下面代码是针对ipad 背景没有透明的处理
+    _cell1.backgroundColor =[UIColor clearColor];
+    _cell2.backgroundColor =[UIColor clearColor];
 }
+
+
+/**
+ *  检测是否支持指纹识别
+ */
+-(void)checkTouchID{
+    
+    LAContext *context = [[LAContext alloc] init];
+    
+    
+    NSError *error;
+    
+    // check if the policy can be evaluated
+    if (![context canEvaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics error:&error])
+    {
+        _cell1.hidden = YES;
+        return;
+    }
+}
+
+
 - (IBAction)changeState:(id)sender {
     
     

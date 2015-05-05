@@ -105,10 +105,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <sections>
                             <tableViewSection id="E9C-lH-FCL">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="bMa-WM-527">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="bMa-WM-527">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bMa-WM-527" id="4FF-7h-l7m">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -126,10 +127,11 @@
                                                     </connections>
                                                 </switch>
                                             </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="MEO-y4-xaY">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="MEO-y4-xaY">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MEO-y4-xaY" id="ebZ-8b-aRZ">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -147,6 +149,7 @@
                                                     </connections>
                                                 </switch>
                                             </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </tableViewCell>
@@ -160,6 +163,8 @@
                     </tableView>
                     <connections>
                         <outlet property="TouchSwitchView" destination="pb4-NS-xPf" id="cgN-ur-5Do"/>
+                        <outlet property="cell1" destination="bMa-WM-527" id="aKR-sS-aNS"/>
+                        <outlet property="cell2" destination="MEO-y4-xaY" id="jNY-Lb-Zok"/>
                         <outlet property="passWordSwitchView" destination="hxO-oN-5r6" id="R31-Ds-ntz"/>
                     </connections>
                 </tableViewController>
