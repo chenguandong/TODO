@@ -77,6 +77,14 @@ CGFloat const cornerRadiusValue = 20;
     
 }
 
+-(BOOL)shouldAutorotate{
+    
+    return YES;
+}
+
+-(NSUInteger)supportedInterfaceOrientations{
+return UIInterfaceOrientationMaskPortrait;
+}
 
 -(void)initColor{
     

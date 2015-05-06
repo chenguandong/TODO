@@ -24,10 +24,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
+    _userDefault = [NSUserDefaults standardUserDefaults];
     
-    [_passWordSwitchView setOn:[userDefault boolForKey:passLock] animated:YES];
-    [_TouchSwitchView setOn:[userDefault boolForKey:touchLock] animated:YES];
+    [_passWordSwitchView setOn:[_userDefault boolForKey:passLock] animated:YES];
+    [_TouchSwitchView setOn:[_userDefault boolForKey:touchLock] animated:YES];
     
     
     [self checkTouchID];
@@ -125,15 +125,15 @@
     
     self.enteredPincode = pincode;
     
-    NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
-    [userDefault setBool:YES forKey:passLock];
+   
+    [_userDefault setBool:YES forKey:passLock];
     
     
     NSLog(@"%@",_enteredPincode);
     
 
-    [userDefault setObject:_enteredPincode forKey:DTpincode];
-    [userDefault synchronize];
+    [_userDefault setObject:_enteredPincode forKey:DTpincode];
+    [_userDefault synchronize];
     
     NSLog(@"%@",[[NSUserDefaults standardUserDefaults]valueForKey:DTpincode]);
 }
