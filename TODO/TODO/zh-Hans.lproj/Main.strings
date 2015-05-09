@@ -1,0 +1,24 @@
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "9ZA-3z-klh"; */
+"9ZA-3z-klh.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "夜间模式"; ObjectID = "LBm-Hc-AJ7"; */
+"LBm-Hc-AJ7.text" = "夜间模式";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "fVl-Ud-uKU"; */
+"fVl-Ud-uKU.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "开启密码"; ObjectID = "hfV-tb-evG"; */
+"hfV-tb-evG.text" = "开启密码";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "lw0-Qw-cMG"; */
+"lw0-Qw-cMG.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "rbb-2F-eqA"; */
+"rbb-2F-eqA.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "开启指纹"; ObjectID = "xCj-lr-mMl"; */
+"xCj-lr-mMl.text" = "开启指纹";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "xhD-vN-azg"; */
+"xhD-vN-azg.normalTitle" = "Button";

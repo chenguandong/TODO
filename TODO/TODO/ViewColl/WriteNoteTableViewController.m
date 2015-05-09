@@ -15,6 +15,7 @@ CGFloat const cornerRadiusValue = 20;
 @property(nonatomic,strong)WriteNoteTableViewControllerViewModel *viewModel;
 @property(nonatomic,assign)int colorValue;
 @property(nonatomic,strong)NSArray *colorArr;
+@property(nonatomic,strong)UIButton *userButton;
 @end
 
 @implementation WriteNoteTableViewController
@@ -25,6 +26,8 @@ CGFloat const cornerRadiusValue = 20;
     _viewModel = nil;
     _noteModel = nil;
     _colorArr = nil;
+    
+    [[NSNotificationCenter defaultCenter]removeObserver:self];
 }
 
 - (void)viewDidLoad {
@@ -53,11 +56,7 @@ CGFloat const cornerRadiusValue = 20;
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
 
-    UIImageView *bgImageView =[[UIImageView alloc]initWithFrame:self.view.frame];
-    
-    bgImageView.image = [UIImage imageNamed:@"note_background"];
-    
-    self.tableView.backgroundView =bgImageView;
+    [self changeTheme];
     
     
     self.textView.layer.borderColor = [UIColor clearColor].CGColor;
@@ -75,6 +74,61 @@ CGFloat const cornerRadiusValue = 20;
     
     [self initColor];
     
+    [self checkIsFistOpenApp];
+    
+    
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(changeTheme) name:isNightNotificationCenter object:nil];
+    
+}
+
+
+-(void)changeTheme{
+    UIImageView *bgImageView =[[UIImageView alloc]initWithFrame:self.view.frame];
+    
+    if ([[NSUserDefaults standardUserDefaults]boolForKey:isNight]) {
+        bgImageView.image =[UIImage imageNamed:@"Start"];
+    }else{
+        
+        bgImageView.image = [UIImage imageNamed:@"note_background"];
+        
+       // bgImageView.backgroundColor = [UIColor redColor];
+        bgImageView.alpha = 1;
+    }
+    
+    
+    
+    self.tableView.backgroundView =bgImageView;
+}
+
+-(void)checkIsFistOpenApp{
+    
+    
+    NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
+    if ([userDefault boolForKey:isFistWritePage]) {
+        return;
+    }else{
+        _userButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        
+        _userButton.layer.contents =(__bridge id)([UIImage imageNamed:@"yindao2.jpg"].CGImage);
+        
+        _userButton.frame = self.view.frame;
+        
+        _userButton.alpha = 0.7;
+        
+        [_userButton addTarget:self action:@selector(userOnClick) forControlEvents:UIControlEventTouchUpInside];
+        
+        [self.view insertSubview:_userButton aboveSubview:self.tableView];
+        
+        [userDefault setBool:YES forKey:isFistWritePage];
+        [userDefault synchronize];
+    }
+    
+    
+}
+
+-(void)userOnClick{
+    [_userButton removeFromSuperview];
+    _userButton = nil;
 }
 
 -(BOOL)shouldAutorotate{
@@ -100,6 +154,8 @@ return UIInterfaceOrientationMaskPortrait;
 
     
     _textView.backgroundColor = _colorArr[_colorValue];
+    
+    _textView.alpha = 0.7;
     
     _buttonColor1.layer.cornerRadius = cornerRadiusValue;
     _buttonColor2.layer.cornerRadius = cornerRadiusValue;

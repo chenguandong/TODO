@@ -6,6 +6,12 @@
 // project.
 
 
+// LBBlurredImage
+#define COCOAPODS_POD_AVAILABLE_LBBlurredImage
+#define COCOAPODS_VERSION_MAJOR_LBBlurredImage 0
+#define COCOAPODS_VERSION_MINOR_LBBlurredImage 2
+#define COCOAPODS_VERSION_PATCH_LBBlurredImage 2
+
 // MJRefresh
 #define COCOAPODS_POD_AVAILABLE_MJRefresh
 #define COCOAPODS_VERSION_MAJOR_MJRefresh 1
@@ -41,16 +47,4 @@
 #define COCOAPODS_VERSION_MAJOR_SVProgressHUD 1
 #define COCOAPODS_VERSION_MINOR_SVProgressHUD 1
 #define COCOAPODS_VERSION_PATCH_SVProgressHUD 3
-
-// SWTableViewCell
-#define COCOAPODS_POD_AVAILABLE_SWTableViewCell
-#define COCOAPODS_VERSION_MAJOR_SWTableViewCell 0
-#define COCOAPODS_VERSION_MINOR_SWTableViewCell 3
-#define COCOAPODS_VERSION_PATCH_SWTableViewCell 7
-
-// Shimmer
-#define COCOAPODS_POD_AVAILABLE_Shimmer
-#define COCOAPODS_VERSION_MAJOR_Shimmer 1
-#define COCOAPODS_VERSION_MINOR_Shimmer 0
-#define COCOAPODS_VERSION_PATCH_Shimmer 2
 

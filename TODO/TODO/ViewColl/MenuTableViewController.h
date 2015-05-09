@@ -13,5 +13,6 @@
 @property (weak, nonatomic) IBOutlet UISwitch *passWordSwitchView;
 @property (weak, nonatomic) IBOutlet UITableViewCell *cell1;
 @property (weak, nonatomic) IBOutlet UITableViewCell *cell2;
+@property (weak, nonatomic) IBOutlet UISwitch *nightSwitch;
 
 @end

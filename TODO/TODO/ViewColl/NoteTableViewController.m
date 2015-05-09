@@ -11,10 +11,15 @@
 #import "NoteTableViewControllerViewModel.h"
 #import "NoteTableViewCell.h"
 #import "WriteNoteTableViewController.h"
+#import "Constants.h"
+
 @interface NoteTableViewController ()
 
 @property(nonatomic,strong)NoteTableViewControllerViewModel *viewModel;
 @property(nonatomic,strong)NoteEntity *noteModel;
+
+@property(nonatomic,strong)UIButton *userButton;
+
 @end
 
 @implementation NoteTableViewController
@@ -25,6 +30,8 @@
     self.tableView.dataSource = nil;
     _viewModel = nil;
     _noteModel = nil;
+    
+    [[NSNotificationCenter defaultCenter]removeObserver:self];
 }
 
 - (void)viewDidLoad {
@@ -37,15 +44,63 @@
     
     self.tableView.tableFooterView = [UIView new];
     
-
-    UIImageView *bgImageView =[[UIImageView alloc]initWithFrame:self.view.frame];
+    [self changeTheme];
     
-    bgImageView.image = [UIImage imageNamed:@"welcome_bg"];
+    [self checkIsFistOpenApp];
     
-    self.tableView.backgroundView =bgImageView;
     
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(changeTheme) name:isNightNotificationCenter object:nil];
     
 }
+
+
+-(void)changeTheme{
+    UIImageView *bgImageView =[[UIImageView alloc]initWithFrame:self.view.frame];
+    
+    if ([[NSUserDefaults standardUserDefaults]boolForKey:isNight]) {
+        bgImageView.image =[UIImage imageNamed:@"Start"];
+    }else{
+        
+        bgImageView.image = [UIImage imageNamed:@"welcome_bg"];
+    }
+    
+    
+    
+    self.tableView.backgroundView =bgImageView;
+}
+
+-(void)checkIsFistOpenApp{
+    
+    NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
+    if ([userDefault boolForKey:isFistListPage]) {
+        return;
+    }else{
+        _userButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        
+        _userButton.layer.contents =(__bridge id)([UIImage imageNamed:@"yindao1.jpg"].CGImage);
+        
+        _userButton.frame = self.view.frame;
+        
+        _userButton.alpha = 0.7;
+        
+        [_userButton addTarget:self action:@selector(userOnClick) forControlEvents:UIControlEventTouchUpInside];
+        
+        [self.view insertSubview:_userButton aboveSubview:self.tableView];
+        
+        [userDefault setBool:YES forKey:isFistListPage];
+        [userDefault synchronize];
+    }
+}
+
+/**
+ *  用户点击引导图的事后调用
+ */
+-(void)userOnClick{
+
+    [_userButton removeFromSuperview];
+    _userButton = nil;
+}
+
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:YES];

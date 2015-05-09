@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  TODO
+
+  Created by chenguandong on 15/5/7.
+  Copyright (c) 2015年 chenguandong. All rights reserved.
+*/
+validateTouchID = "To unlock the application";
+
+CFBundleDisplayName="WaitToBeDoneList";

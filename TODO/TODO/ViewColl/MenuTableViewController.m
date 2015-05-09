@@ -28,7 +28,7 @@
     
     [_passWordSwitchView setOn:[_userDefault boolForKey:passLock] animated:YES];
     [_TouchSwitchView setOn:[_userDefault boolForKey:touchLock] animated:YES];
-    
+    [_nightSwitch setOn:[_userDefault boolForKey:isNight]];
     
     [self checkTouchID];
     
@@ -101,6 +101,18 @@
         
             
         }
+            break;
+            
+            
+        case 2://是否开启夜间模式
+            [_userDefault setBool:swith.isOn forKey:isNight];
+            [_userDefault synchronize];
+            
+            //发送切换主题广播
+            
+            [[NSNotificationCenter defaultCenter]postNotificationName:isNightNotificationCenter object:nil];
+           
+            
             break;
             
         default:

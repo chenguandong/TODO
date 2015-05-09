@@ -1,0 +1,24 @@
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "9ZA-3z-klh"; */
+"9ZA-3z-klh.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Dark Theme"; ObjectID = "LBm-Hc-AJ7"; */
+"LBm-Hc-AJ7.text" = "Dark Theme";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "fVl-Ud-uKU"; */
+"fVl-Ud-uKU.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Passcode"; ObjectID = "hfV-tb-evG"; */
+"hfV-tb-evG.text" = "Passcode";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "lw0-Qw-cMG"; */
+"lw0-Qw-cMG.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "rbb-2F-eqA"; */
+"rbb-2F-eqA.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Touch ID"; ObjectID = "xCj-lr-mMl"; */
+"xCj-lr-mMl.text" = "Touch ID";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "xhD-vN-azg"; */
+"xhD-vN-azg.normalTitle" = "Button";

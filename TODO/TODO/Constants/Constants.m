@@ -24,3 +24,17 @@ NSString *const noteTableName = @"NoteEntity";
  NSString *const DTpincode = @"DTenteredPincode";
 //bool
  NSString *const touchLock = @"touchLock";
+//是否第一次进入列表页面
+ NSString *const isFistListPage = @"isFistListPage";
+
+//是否第一次进入创建笔记页面
+ NSString *const isFistWritePage=@"isFistWritePage";
+
+//是否开启夜间模式
+ NSString *const isNight = @"isNight";
+
+//----NSNotificationCenter---///
+//是否开启夜间模式通知
+ NSString *const isNightNotificationCenter = @"isNightNotificationCenter";
+
+

@@ -64,27 +64,42 @@
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:YES];
     
-    if (_isPass||![[NSUserDefaults standardUserDefaults]boolForKey:passLock]) {
+    if (_isPass) {
+        [self performSegueWithIdentifier:@"Touch" sender:self];
+        return;
+    }
+    
+    if ([[NSUserDefaults standardUserDefaults]boolForKey:passLock]||[[NSUserDefaults standardUserDefaults]boolForKey:touchLock]) {
+        //有密码
+        if (_enteredPincode) {
+            
+            if ([[NSUserDefaults standardUserDefaults] boolForKey:touchLock]) {
+                
+                [self initCheckTouchID];
+                
+            }else{
+                
+                [self initCheckPassCode];
+            }
+        
+        }else{
+            [self initCheckTouchID];
+
+        }
+        
+    }else{
+    
         [self performSegueWithIdentifier:@"Touch" sender:self];
         return;
     }
     
     
-    //有密码
-    if (_enteredPincode) {
-        
-        if ([[NSUserDefaults standardUserDefaults] boolForKey:touchLock]) {
-            
-            [self initCheckTouchID];
-            
-        }else{
-        
-            [self initCheckPassCode];
-        }
-        
-        
-    }
+    
    
+}
+- (IBAction)onClickTouchIDButton:(id)sender {
+    
+    [self initCheckTouchID];
 }
 
 -(void)initCheckTouchID{
@@ -106,7 +121,7 @@
     
     // evaluate
     [context evaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics
-            localizedReason:@"请验证已有指纹"
+            localizedReason:NSLocalizedString(@"validateTouchID", nil)
                       reply:
      ^(BOOL success, NSError *authenticationError) {
          
@@ -117,7 +132,7 @@
                  
                  [self performSegueWithIdentifier:@"Touch" sender:self];
                  
-                 
+                 _isPass = YES;
              }
              else {
                  NSLog(@"error:%@", authenticationError);

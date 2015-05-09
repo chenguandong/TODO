@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Pods-LBBlurredImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-MJRefresh.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -34,16 +39,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-SWTableViewCell.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-Shimmer.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -52,47 +47,42 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1397634358B1044FE87D88C2</key>
+		<key>24657D8D430D0C192F676AF9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2C1D4F8190353751F7583FE4</key>
+		<key>5B0D2FB07F2797234DB0D11E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3719B461A8FB63FAFE23827A</key>
+		<key>60C7B50EA1F84CFAB3B660FD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7254D1323BB280B0F010D053</key>
+		<key>7286254AC35E1414AAC37240</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>83F41E3F47BB04B84DE25747</key>
+		<key>7CD345207EF40107AD2794A7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>87BCCB1F2C0214F4772076D2</key>
+		<key>C59606D54ACF5790FF91C2BD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>89F601905DC6F1CF0285D0FE</key>
+		<key>E105585564D9DAD52EDA5247</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>ABC37F8CF9067C9B87AFD843</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F81088DF6AA16045C1FB7C1F</key>
+		<key>F8DB4C6C58352537A8074F9C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
