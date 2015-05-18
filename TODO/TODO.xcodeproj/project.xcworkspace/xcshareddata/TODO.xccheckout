@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>C3E86247-7F7D-4671-AFB5-EF97C3BCDB85</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>TODO</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>A4C26A179BBFAA68CC35D0C5361C5D14D7AE5A01</key>
 		<string>https://github.com/chenguandong/TODO.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>TODO/TODO.xcodeproj/project.xcworkspace</string>
+	<string>TODO/TODO.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>A4C26A179BBFAA68CC35D0C5361C5D14D7AE5A01</key>
