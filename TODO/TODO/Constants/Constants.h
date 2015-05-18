@@ -26,3 +26,23 @@ UIKIT_EXTERN NSString *const passLock;
 UIKIT_EXTERN NSString *const touchLock;
 //密码
 UIKIT_EXTERN NSString *const DTpincode;
+
+
+//是否第一次进入列表页面
+UIKIT_EXTERN NSString *const isFistListPage;
+
+//是否第一次进入创建笔记页面
+UIKIT_EXTERN NSString *const isFistWritePage;
+
+
+//是否开启夜间模式
+UIKIT_EXTERN NSString *const isNight;
+
+
+//----NSNotificationCenter---///
+//是否开启夜间模式通知
+
+//是否开启夜间模式通知
+UIKIT_EXTERN NSString *const isNightNotificationCenter;
+
+

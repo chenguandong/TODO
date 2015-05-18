@@ -16,6 +16,12 @@
 		1804CFB51ADFE813006F0D21 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1804CFB41ADFE813006F0D21 /* Images.xcassets */; };
 		1804CFB81ADFE813006F0D21 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1804CFB61ADFE813006F0D21 /* LaunchScreen.xib */; };
 		1804CFC41ADFE813006F0D21 /* TODOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1804CFC31ADFE813006F0D21 /* TODOTests.m */; };
+		180E29071AFACCF200CBB8A6 /* yindao1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 180E29051AFACCF200CBB8A6 /* yindao1.jpg */; };
+		180E29081AFACCF200CBB8A6 /* yindao2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 180E29061AFACCF200CBB8A6 /* yindao2.jpg */; };
+		180E29131AFB5E0000CBB8A6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 180E29151AFB5E0000CBB8A6 /* Localizable.strings */; };
+		184C50481AFD964F00198616 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 184C504A1AFD964F00198616 /* InfoPlist.strings */; };
+		184C50531AFD983500198616 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 184C50511AFD983500198616 /* Info.plist */; };
+		184C505E1AFD9D5800198616 /* 000.png in Resources */ = {isa = PBXBuildFile; fileRef = 184C505D1AFD9D5800198616 /* 000.png */; };
 		186B83231AEE54DF0066A62D /* note_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 186B83221AEE54DF0066A62D /* note_background.png */; };
 		186B832A1AEE64B40066A62D /* welcome_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 186B83291AEE64B40066A62D /* welcome_bg.png */; };
 		186B832E1AEE6B7E0066A62D /* TouchIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186B832C1AEE6B7E0066A62D /* TouchIDViewController.m */; };
@@ -53,7 +59,6 @@
 		180468BF1AE65E300077C749 /* NoteTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NoteTableViewController.h; path = ViewColl/NoteTableViewController.h; sourceTree = "<group>"; };
 		180468C01AE65E300077C749 /* NoteTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NoteTableViewController.m; path = ViewColl/NoteTableViewController.m; sourceTree = "<group>"; };
 		1804CFA11ADFE813006F0D21 /* TODO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TODO.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1804CFA51ADFE813006F0D21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1804CFA61ADFE813006F0D21 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1804CFA81ADFE813006F0D21 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1804CFA91ADFE813006F0D21 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -66,6 +71,16 @@
 		1804CFBD1ADFE813006F0D21 /* TODOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TODOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1804CFC21ADFE813006F0D21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1804CFC31ADFE813006F0D21 /* TODOTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TODOTests.m; sourceTree = "<group>"; };
+		180E29051AFACCF200CBB8A6 /* yindao1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yindao1.jpg; sourceTree = "<group>"; };
+		180E29061AFACCF200CBB8A6 /* yindao2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yindao2.jpg; sourceTree = "<group>"; };
+		180E29091AFB599700CBB8A6 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		180E290C1AFB5ADB00CBB8A6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		180E29161AFB5E0300CBB8A6 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		181D046C1AFC4A9900AEA2D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		184C50491AFD964F00198616 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		184C504C1AFD965500198616 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		184C50541AFD983B00198616 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/Info.plist; sourceTree = "<group>"; };
+		184C505D1AFD9D5800198616 /* 000.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 000.png; sourceTree = "<group>"; };
 		186B83221AEE54DF0066A62D /* note_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = note_background.png; sourceTree = "<group>"; };
 		186B83291AEE64B40066A62D /* welcome_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = welcome_bg.png; sourceTree = "<group>"; };
 		186B832B1AEE6B7E0066A62D /* TouchIDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TouchIDViewController.h; path = ViewColl/TouchIDViewController.h; sourceTree = "<group>"; };
@@ -181,9 +196,11 @@
 		1804CFA41ADFE813006F0D21 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				184C50511AFD983500198616 /* Info.plist */,
 				1897E5341AE88C7000E7C2A5 /* Images */,
-				1804CFA51ADFE813006F0D21 /* Info.plist */,
+				184C504A1AFD964F00198616 /* InfoPlist.strings */,
 				1804CFA61ADFE813006F0D21 /* main.m */,
+				180E29151AFB5E0000CBB8A6 /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -216,6 +233,9 @@
 		1897E5341AE88C7000E7C2A5 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				184C505D1AFD9D5800198616 /* 000.png */,
+				180E29051AFACCF200CBB8A6 /* yindao1.jpg */,
+				180E29061AFACCF200CBB8A6 /* yindao2.jpg */,
 				186B83301AEE6FB00066A62D /* iconfont-zhiwen.png */,
 				186B83291AEE64B40066A62D /* welcome_bg.png */,
 				186B83221AEE54DF0066A62D /* note_background.png */,
@@ -363,6 +383,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 1804CF981ADFE813006F0D21;
 			productRefGroup = 1804CFA21ADFE813006F0D21 /* Products */;
@@ -382,12 +403,18 @@
 			files = (
 				186B83311AEE6FB00066A62D /* iconfont-zhiwen.png in Resources */,
 				1804CFB31ADFE813006F0D21 /* Main.storyboard in Resources */,
+				180E29081AFACCF200CBB8A6 /* yindao2.jpg in Resources */,
 				186B832A1AEE64B40066A62D /* welcome_bg.png in Resources */,
+				184C50481AFD964F00198616 /* InfoPlist.strings in Resources */,
 				1804CFB81ADFE813006F0D21 /* LaunchScreen.xib in Resources */,
+				184C505E1AFD9D5800198616 /* 000.png in Resources */,
 				1897E5571AE8FF2600E7C2A5 /* iconfont-setting.png in Resources */,
 				18FE3CE61AF1B488006D7536 /* JKLLockScreenViewController.xib in Resources */,
 				1897E5381AE88C7000E7C2A5 /* iconfont-note.png in Resources */,
+				180E29071AFACCF200CBB8A6 /* yindao1.jpg in Resources */,
+				184C50531AFD983500198616 /* Info.plist in Resources */,
 				1897E5531AE8D79D00E7C2A5 /* NoteTableViewCell.xib in Resources */,
+				180E29131AFB5E0000CBB8A6 /* Localizable.strings in Resources */,
 				1804CFB51ADFE813006F0D21 /* Images.xcassets in Resources */,
 				186B83231AEE54DF0066A62D /* note_background.png in Resources */,
 				1897E5551AE8E89100E7C2A5 /* iconfont-save.png in Resources */,
@@ -484,6 +511,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				1804CFB21ADFE813006F0D21 /* Base */,
+				180E29091AFB599700CBB8A6 /* zh-Hans */,
+				180E290C1AFB5ADB00CBB8A6 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -494,6 +523,32 @@
 				1804CFB71ADFE813006F0D21 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		180E29151AFB5E0000CBB8A6 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				180E29161AFB5E0300CBB8A6 /* zh-Hans */,
+				181D046C1AFC4A9900AEA2D3 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		184C504A1AFD964F00198616 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184C50491AFD964F00198616 /* zh-Hans */,
+				184C504C1AFD965500198616 /* Base */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		184C50511AFD983500198616 /* Info.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184C50541AFD983B00198616 /* Base */,
+			);
+			name = Info.plist;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -516,7 +571,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: guandong chen (BU39DT6VD4)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: guandong chen (BU39DT6VD4)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -539,7 +595,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -560,7 +616,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: guandong chen (BU39DT6VD4)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: guandong chen (BU39DT6VD4)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -575,8 +632,9 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -587,13 +645,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				INFOPLIST_FILE = TODO/Info.plist;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: guandong chen (BU39DT6VD4)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: guandong chen (BU39DT6VD4)";
+				INFOPLIST_FILE = /Users/Apple/Desktop/TODO/SRC/TODO/TODO/TODO/Base.lproj/info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "5b49d7da-2450-4ba8-be16-a45fe256f29e";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -604,13 +662,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				INFOPLIST_FILE = TODO/Info.plist;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: guandong chen (BU39DT6VD4)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: guandong chen (BU39DT6VD4)";
+				INFOPLIST_FILE = /Users/Apple/Desktop/TODO/SRC/TODO/TODO/TODO/Base.lproj/info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "5b49d7da-2450-4ba8-be16-a45fe256f29e";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -16,17 +15,17 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bex-Mf-9Rb">
-                        <rect key="frame" x="0.0" y="8" width="320" height="20"/>
+                        <rect key="frame" x="5" y="2" width="310" height="21"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="20" id="J0S-n9-Wvg"/>
+                            <constraint firstAttribute="height" constant="21" id="IWb-vs-uwu"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Labeldadasdsadsadasdsadsadasdsadasdasdsadasdsad" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z0L-On-fGk">
-                        <rect key="frame" x="0.0" y="28" width="320" height="41"/>
+                        <rect key="frame" x="5" y="23" width="310" height="44"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -35,22 +34,14 @@
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 <constraints>
-                    <constraint firstAttribute="trailingMargin" secondItem="Bex-Mf-9Rb" secondAttribute="trailing" constant="-55" id="2v6-9M-EOW"/>
-                    <constraint firstItem="Bex-Mf-9Rb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="7Yv-fO-q3d"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="z0L-On-fGk" secondAttribute="trailing" constant="-8" id="ECq-z9-5vY"/>
-                    <constraint firstItem="z0L-On-fGk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="KLw-tw-7hc"/>
-                    <constraint firstItem="Bex-Mf-9Rb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="KPx-Jr-wtW"/>
-                    <constraint firstItem="z0L-On-fGk" firstAttribute="top" secondItem="Bex-Mf-9Rb" secondAttribute="bottom" id="Kad-ml-otC"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="Bex-Mf-9Rb" secondAttribute="trailing" constant="-8" id="Luu-hi-vYj"/>
-                    <constraint firstAttribute="trailing" secondItem="Bex-Mf-9Rb" secondAttribute="trailing" id="POj-VA-s0s"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="z0L-On-fGk" secondAttribute="bottom" constant="-8" id="WO1-yu-peD"/>
+                    <constraint firstItem="z0L-On-fGk" firstAttribute="top" secondItem="Bex-Mf-9Rb" secondAttribute="bottom" id="0MZ-oh-CuL"/>
+                    <constraint firstItem="Bex-Mf-9Rb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="3Fu-gC-yqW"/>
+                    <constraint firstItem="z0L-On-fGk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="GHE-Pu-l0h"/>
+                    <constraint firstAttribute="trailing" secondItem="Bex-Mf-9Rb" secondAttribute="trailing" constant="5" id="f7H-Gb-QAB"/>
+                    <constraint firstAttribute="bottom" secondItem="z0L-On-fGk" secondAttribute="bottom" constant="2" id="jTB-O7-MV2"/>
+                    <constraint firstItem="Bex-Mf-9Rb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="qoX-Tr-tJ3"/>
+                    <constraint firstAttribute="trailing" secondItem="z0L-On-fGk" secondAttribute="trailing" constant="5" id="zdl-Uf-c4t"/>
                 </constraints>
-                <variation key="default">
-                    <mask key="constraints">
-                        <exclude reference="2v6-9M-EOW"/>
-                        <exclude reference="POj-VA-s0s"/>
-                    </mask>
-                </variation>
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

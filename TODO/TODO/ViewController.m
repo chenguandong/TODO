@@ -7,9 +7,9 @@
 //
 
 #import "ViewController.h"
-
+#import <UIImageView+LBBlurredImage.h>
 @interface ViewController ()
-
+@property(nonatomic,strong)UIImageView *imageView;
 @end
 
 @implementation ViewController
@@ -27,10 +27,32 @@
     self.contentViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"Home"];
     self.leftMenuViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"Menu"];
     
-    self.backgroundImage = [UIImage imageNamed:@"Start"];
+
+    
+    _imageView = [[UIImageView alloc]initWithFrame:self.view.frame];
+    
+    
+    __weak typeof(self) weakSelf = self;
+    
+    __weak UIImageView *blurImageView = _imageView;
+    [blurImageView setImageToBlur:[UIImage imageNamed:@"Start"]
+                        blurRadius:kLBBlurredImageDefaultBlurRadius
+                   completionBlock:^(){
+                       NSLog(@"The blurred image has been set");
+
+                       weakSelf.backgroundImage = blurImageView.image;//[UIImage imageNamed:@"Start"];
+
+                       _imageView = nil;
+
+                       
+                   }];
+
+   
     
     self.delegate = self;
 }
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.

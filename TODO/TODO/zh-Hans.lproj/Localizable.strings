@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  TODO
+
+  Created by chenguandong on 15/5/7.
+  Copyright (c) 2015年 chenguandong. All rights reserved.
+*/
+validateTouchID = "请验证已有指纹";
+CFBundleDisplayName="待办清单";

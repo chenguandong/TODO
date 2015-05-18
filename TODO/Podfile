@@ -1,8 +1,7 @@
 platform :ios, '7.0'
 pod 'SVProgressHUD'
 pod 'MJRefresh'
-pod 'SWTableViewCell', '~> 0.3.7'
-pod 'Shimmer'
 pod 'RESideMenu', '~> 4.0.7'
 pod 'NSDate+TimeAgo'
 pod "RFMarkdownTextView", "~> 1.4"
+pod 'LBBlurredImage'
